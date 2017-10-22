@@ -1,0 +1,56 @@
+/*INPUT SECTION*/
+.jumbotron-header {
+	max-width: 750px;
+	margin: 10% auto 0 auto;
+}
+
+.jumbotron-header h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.jumbotron-header input {
+	margin-bottom: 20px;
+}
+
+.jumbotron-header textarea {
+	height: 120px;
+}
+
+.jumbotron-header button {
+	margin-top: 20px;
+	display: block;
+}
+
+.jumbotron-header .error {
+	margin-top: 15px;
+	margin-bottom: -15px;
+}
+/*END*/
+
+/*COMMENTS SECTION*/
+.comments h2 {
+	max-width: 750px;
+	margin: 20px auto 5px auto;
+}
+
+.comments hr {
+	max-width: 750px;
+}/*END*/
+
+/*INDIVIDUAL COMMENT STYLING*/
+.jumbotron-comment{
+	max-width: 750px;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+.jumbotron-comment text {
+	padding: 10px;
+}
+
+.jumbotron-comment button {
+	display: block;
+	margin-top: 15px;
+}/*END*/
+
