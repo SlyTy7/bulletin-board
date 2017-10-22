@@ -25,6 +25,7 @@
 .jumbotron-header .error {
 	margin-top: 15px;
 	margin-bottom: -15px;
+	position: absolute;
 }
 /*END*/
 

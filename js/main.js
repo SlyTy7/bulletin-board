@@ -2,13 +2,9 @@ $(document).ready(function(){
 
 	//submit button
 	var submit = $("#submit");
-
 	//delete button
 	var remove = $("#remove");
 
-	//remove button
-	//var deleteComment = $("#remove");
-	//console.log(remove);
 
 	// add new comment to page once submit button is pressed
 	submit.click(function(){
@@ -27,17 +23,14 @@ $(document).ready(function(){
 			<div>
 		`;
 
-		//send error if no name is entered
+		//send error if form is left empty
 		if(name == ""){
-			$(".jumbotron-header").append("<text class='error'>You didn't enter your name!</p>");
-			return console.log("No Name");
-		}else{
-			$(".error").remove();
-		}
-
-		//send error if no comment is entered
-		if(comment == ""){
-			return console.log("No Comment");
+			return $(".error").text("You didn't enter your name!");
+		}else if(comment == ""){
+			return $(".error").text("You didn't enter a comment!");
+		}else if(name != "" && comment != ""){
+			//remove error if fixed
+			$(".error").text("");
 		}
 
 		//adds new comment to end of comment chain
@@ -46,7 +39,7 @@ $(document).ready(function(){
 		//makes every other comment background-color change
 		commentColor();
 
-		//resets name and comment to blank
+		//resets name and comment to blank after successful submit
 		$("#name").val("");
 		$("#comment").val("");
 	});
